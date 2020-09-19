@@ -1,0 +1,28 @@
+.page {
+  background: #849D8F;
+  color: #FFFFFF;
+
+}
+.main-menu {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+a {
+  color: #FFFFFF;
+}
+.advantages{
+  color:black;
+}
+.contacts {
+  color:black;
+}
+.news-subscription {
+  color:black;
+}
+.blog-news {
+  color:black;
+}
