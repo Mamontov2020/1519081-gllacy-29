@@ -1,28 +1,54 @@
-.page {
-  background: #849D8F;
-  color: #FFFFFF;
-
+/* Variables */
+:root {
+    --background-index1: #849D8F;
+    --background-index2: #8996A6;
+    --background-index3: #9D8B84;
+    --background-subscription: #F8F7F4;
+    --color-logo: #FBFCFB;
+    --white: #FFFFFF;
+    --dark: #323232;
+    --gray: #5A5A5A;
+    --background-li-catalog: #FBDED7;
 }
-.main-menu {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 18px;
-  color: #FFFFFF;
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family:'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: var(--background-index1);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 a {
-  color: #FFFFFF;
+  color: var(--white);
+  text-decoration: none;
 }
-.advantages{
-  color:black;
-}
-.contacts {
-  color:black;
+.advantages,
+.contacts,
+.phone-link-contacts {
+  color: var(--dark);
 }
 .news-subscription {
-  color:black;
+  color: var(--gray);
 }
-.blog-news {
-  color:black;
+.main-header-logo {
+  color: var(--color-logo);
+}
+.site-navigation {
+  list-style: none;
+}
+.catalog-menu {
+  list-style: none;
+}
+.users-links {
+  list-style: none;
 }
