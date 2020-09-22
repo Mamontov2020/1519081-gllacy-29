@@ -11,7 +11,8 @@
     --background-li-catalog: #FBDED7;
 }
 body {
-  min-width: 960px;
+  min-width: 1200px;
+  min-height: 2419px;
   margin: 0;
   padding: 0;
   font-family:'Roboto', sans-serif;
@@ -23,6 +24,10 @@ body {
   background-color: var(--background-index1);
   background-position: top center;
   background-repeat: no-repeat;
+}
+main{
+  text-align: center;
+  display: block;
 }
 img {
   max-width: 100%;
@@ -49,7 +54,7 @@ a {
 .catalog-menu {
   list-style: none;
 }
-.users-links {
+.users-navigation {
   list-style: none;
 }
 .social-network-lis {
@@ -57,4 +62,102 @@ a {
 }
 .hits-list {
   list-style: none;
+}
+.content-1,
+.content-2,
+.content-3 {
+  text-align: center;
+}
+.hits-list li {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  text-align: center;
+}
+
+
+.promotion section {
+  Width: 560px;
+  Height: 229px;
+  margin: 27px;
+  text-align: left;
+  display: inline-block;
+}
+.promo-1 {
+  background-image: url("../img/raz.jpg");
+  padding: 16px;
+
+}
+.promo-2 {
+  background-image: url("../img/chocolate.jpg");
+  padding: 16px;
+}
+.button-promo {
+
+}
+.promotion h2 {
+  text-align: center;
+}
+.advantages {
+  width: 1146px;
+  height: 306px;
+  margin: 200px 0px;
+  text-align: left;
+  display: inline-block;
+  background-image: url("../img/wafer.jpg");
+}
+.advantages-list-item {
+  width: 485px;
+  height: 55px;
+  font-size: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+.news {
+  display: inline-block;
+}
+.blog-news {
+  width: 560px;
+  height: 220px;
+  margin-right: 27px;
+  background-image: url("../img/bg-ice-cream.jpg");
+  color: var(--dark);
+  font-size: 16px;
+  text-align: left;
+  float: left;
+}
+.blog-news a {
+  color: var(--dark);
+  font-size: 24px;
+}
+.news-subscription {
+  width: 560px;
+  height: 220px;
+  background-color: var( --background-subscription);
+  text-align: left;
+  float: right;
+}
+.contacts {
+  text-align: right;
+  margin-right: 200px;
+}
+.main-footer {
+  width: 1144px;
+  height: 60px;
+  display: inline-block;
+}
+.social-network li {
+  display: inline-block;
+}
+.about-as-list-item  {
+  height: 41px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.about-as {
+  font-size: 13px;
+  display: inline;
 }
