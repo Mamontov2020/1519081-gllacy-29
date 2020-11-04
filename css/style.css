@@ -21,6 +21,9 @@ a{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.page {
+  height: 100%;
+}
 
 .site-wrapper{
   background-color: #849d8f;
@@ -29,6 +32,10 @@ a{
   -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
   -o-transition: background-image 0.5s ease, background-color 0.5s ease;
   transition: background-image 0.5s ease, background-color 0.5s ease;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .catalog-page{
@@ -95,16 +102,17 @@ justify-content: space-between;
 /* стили главного меню */
 .site-navigation{
   margin: 0;
-  margin-bottom: -3px;
+  margin-bottom: 2px;
   padding: 0;
-  width: 385px;
+  width: 380px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation-item{
   
-  padding-bottom: 12px;
+  padding-bottom: 20px;
 }
 
 .navigation-label{
@@ -152,7 +160,7 @@ justify-content: space-between;
 
 .subnavigation{
   position: absolute;
-  top: 45px;
+  top: 30px;
   left: -6px;
   z-index: 1;
   display: none;
@@ -205,10 +213,12 @@ justify-content: space-between;
 
 /* стили пользовательского меню */
 
+
 .user-navigation{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -216,7 +226,7 @@ justify-content: space-between;
           align-items: center;
   margin: 0;
   padding: 0;
-  width: 310px;
+  width: 340px;
 }
 
 .user-navigation li:not(:last-child){
@@ -224,7 +234,7 @@ justify-content: space-between;
 }
 
 .user-navigation>li:first-child{
-  margin-left: 22px;
+  margin-left: 40px;
 }
 
 .search-button,
@@ -251,7 +261,6 @@ justify-content: space-between;
 .search-panel{
   position: relative;
   margin-bottom: 3px;
-  padding-top: 16px;
   padding-bottom: 12px;
 }
 
@@ -277,7 +286,7 @@ justify-content: space-between;
 .search-field{
   position: absolute;
   right: 0;
-  top: 47px;
+  top: 32px;
   display: none;
   margin: 0;
   padding: 0;
@@ -326,7 +335,6 @@ justify-content: space-between;
 
 .login{
   position: relative;
-  padding-top: 16px;
   padding-bottom: 12px;
 }
 
@@ -368,7 +376,7 @@ justify-content: space-between;
 }
 
 .empty-cart .cart-button{
-  padding-right: 33px;
+  padding-right: 15px;
 }
 
 .fill-cart .cart-button::before{
@@ -406,7 +414,7 @@ justify-content: space-between;
 .login-form{
   position: absolute;
   right: -3px;
-  top: 45px;
+  top: 28px;
   z-index: 1;
   display: none;
   margin: 0;
@@ -502,7 +510,6 @@ justify-content: space-between;
 /* всплывашка с корзиной*/
 
 .cart{
-  padding-top: 16px;
   padding-bottom: 12px;
 }
 
@@ -517,7 +524,7 @@ justify-content: space-between;
 .cart-content{
   position: absolute;
   right: 0px;
-  top: 45px;
+  top: 28px;
   z-index: 1;
   display: none;
   margin: 0;
@@ -684,9 +691,9 @@ justify-content: space-between;
 /* пользовательская информация и слйдер*/
 
 .common-information{
-  margin-top: -8px;
+  margin-top: -12px;
   margin-bottom: 30px;
-  padding-right: 27px;
+  padding-right: 2px;
 }
 
 .user-info{
@@ -731,7 +738,7 @@ justify-content: space-between;
 }
 
 .no-breadcrumbs .main-contacts{
-  padding-top: 4px;
+  padding-top: 1px;
 }
 
 .has-breadcrumbs .main-contacts{
@@ -745,7 +752,7 @@ justify-content: space-between;
 }
 
 .main-contacts p:first-of-type{
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   padding-left: 10px;
 }
 
@@ -756,7 +763,7 @@ justify-content: space-between;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  padding-top: 275px;
+  padding-top: 280px;
   text-align: center;
   color: #ffffff;
 }
@@ -770,7 +777,7 @@ justify-content: space-between;
 .slide-title{
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -883,7 +890,7 @@ justify-content: space-between;
 
 .spetial-offer{
   padding: 0;
-  padding-top: 13px;
+  padding-top: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -915,7 +922,7 @@ justify-content: space-between;
   padding: 0;
   padding-left: 18px;
   padding-right: 25px;
-  padding-top: 15px;
+  padding-top: 16px;
 }
 
 .offer-lead{
@@ -946,11 +953,11 @@ justify-content: space-between;
       align-self: flex-end;
   margin-right: 22px;
   margin-top: 45px;
-  padding: 12px 23px;
+  padding: 14px 25px;
 }
 
 .spetial-offer .want-chocolate{
-  padding: 11px 21px;
+  padding: 14px 22px;
 }
 
 /* hits*/
@@ -977,9 +984,9 @@ justify-content: space-between;
 /* advantages block*/
 
 .advantages{
-  min-height: 256px;
+  min-height: 262px;
   margin: 0 auto;
-  padding: 24px 20px;
+  padding: 21px 20px;
   border-radius: 15px;
   color: #323232;
   background-color: #f1e8d5;
@@ -1018,7 +1025,7 @@ justify-content: space-between;
 .news,
 .subscribe-form{
   width: 560px;
-  padding-bottom: 22px;
+  padding-bottom: 10px;
   border-radius: 15px;
 }
 
@@ -1039,10 +1046,10 @@ justify-content: space-between;
 
 .news h3{
   margin: 0;
-  margin-top: 23px;
+  margin-top: 20px;
   margin-left: 20px;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .more-information{
@@ -1074,13 +1081,13 @@ justify-content: space-between;
 }
 
 .subscribe-form p{
-  margin: 30px 20px;
+  margin: 22px 20px;
   color: #5a5a5a;
 }
 
 .subscribe-form form{
-  margin-left: 21px;
-  padding-top: 5px;
+  margin-left: 23px;
+  padding-top: 22px;
 }
 
 .subscribe-form input[type="email"]{
@@ -1123,6 +1130,7 @@ justify-content: space-between;
 .map{
   height: 427px;
   margin: 0 auto;
+  margin-top: 40px;
   margin-bottom: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1147,7 +1155,7 @@ justify-content: space-between;
   position: absolute;
   z-index: 2;
   width: 252px;
-  margin-top: 61px;
+  margin-top: 84px;
   margin-left: 843px;
   padding-top: 27px;
   padding-left: 25px;
@@ -1206,7 +1214,7 @@ justify-content: space-between;
 }
 
 .social-wrapper{
-  width: 185px;
+  width: 170px;
   max-width: 185px;
 }
 
@@ -1226,7 +1234,7 @@ justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 345px;
+  width: 330px;
   margin-top: -10px;
   font-size: 13px;
   line-height: 18px;
@@ -1256,8 +1264,8 @@ justify-content: space-between;
 
 .social-button{
   display: block;
-  width: 33px;
-  height: 33px;
+  width: 32px;
+  height: 32px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
@@ -1403,18 +1411,6 @@ a.bold-href{
   font-size: 24px;
   line-height: 28px;
   color: #323232;
-}
-
-/*GRID*/
-.page {
-  height: 100%;
-}
-
-.page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
 
 /* стили для catalog.html */
@@ -2017,7 +2013,8 @@ a.bold-href{
 }
 
 .weight{
-  margin-left: -12px;
+  margin-bottom: 20px;
+  margin-left: -2px;
   font-size: 30px;
   line-height: 45px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
