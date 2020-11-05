@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="site-wrapper catalog-page">
@@ -59,7 +59,7 @@
                   <li>
                     <h2 class="visible-hidden">Поиск</h2>
                     <form name="search" method="post" action="https://echo.htmlacademy.ru">
-                      <input type="search" name="search-text" placeholder="Что ищем?" aria-label="Поиск по сайту">
+                      <input type="search" name="search-text" placeholder="Крем-брюле" aria-label="Поиск по сайту">
                     </form>
                   </li>
                 </ul>
@@ -98,7 +98,7 @@
                       <li class="cart-item">
                         <button class="delete-cart-item" type="button">Удалить</button>
                         <a href="catalog-item.html">
-                          <img class="cart-item-img" src="img/orange.jpg" width="32" height="32" alt="Пломбир с апельсиновым джемом">
+                          <img class="cart-item-img" src="img/orange.png" width="32" height="32" alt="Пломбир с апельсиновым джемом">
                           <span class="cart-item-title">Пломбир с апельсиновым джемом</span>
                         </a>
                         <span class="cart-item-cost">1,5 кг x <b>200 руб</b></span>
@@ -107,7 +107,7 @@
                       <li class="cart-item last-cart-item">
                         <button class="delete-cart-item" type="button">Удалить</button>
                         <a href="catalog-item">
-                          <img class="cart-item-img" src="img/strawberry.jpg" width="32" height="32" alt="Клубничный пломбир с присыпкой  из белого шоколада">
+                          <img class="cart-item-img" src="img/strawberry.png" width="32" height="32" alt="Клубничный пломбир с присыпкой  из белого шоколада">
                           <span class="cart-item-title">Клубничный пломбир с присыпкой  из белого шоколада</span>
                         </a>
                         <span class="cart-item-cost">1,5 кг x <b>300 руб</b></span>
@@ -154,7 +154,7 @@
           <h2 class="visible-hidden">Фильтры поиска</h2>
           <form name="filters" method="post" action="https://echo.htmlacademy.ru">
             <div class="filters-first-row">
-              <fieldset class="sotring">
+              <fieldset class="sorting">
                 <legend>Сортировка</legend>
                 <div class="filters-background select">
                   <select class="filters-sorting" id="filters-sorting" name="filters-sorting">
@@ -216,8 +216,8 @@
                       <label for="fillers-chocolate" tabindex="0">шоколадные</label>
                     </li>
                     <li class="filter-option checklist">
-                      <input class="checkbox-filter" type="checkbox" id="fillers-shugar" name="filters-fillers" value="shugar" checked>
-                      <label for="fillers-shugar" tabindex="0">сахарные присыпки</label>
+                      <input class="checkbox-filter" type="checkbox" id="fillers-sugar" name="filters-fillers" value="sugar" checked>
+                      <label for="fillers-sugar" tabindex="0">сахарные присыпки</label>
                     </li>
                     <li class="filter-option checklist">
                       <input class="checkbox-filter" type="checkbox" id="fillers-fruit" name="filters-fillers" value="fruit">
@@ -250,7 +250,7 @@
               <p class="description">
                 <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
             <li class="ice-cream-card">
               <img class="ice-cream-img" src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -261,7 +261,7 @@
               <p class="description">
                 <a href="#">Сливочно-кофейное с кусочками шоколада</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
             <li class="ice-cream-card">
               <img class="ice-cream-img" src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -272,7 +272,7 @@
               <p class="description">
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
             <li class="ice-cream-card">
               <img class="ice-cream-img" src="img/cream-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -283,7 +283,7 @@
               <p class="description">
                 <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
 
             <li class="ice-cream-card">
@@ -295,7 +295,7 @@
               <p class="description">
                 <a href="#">Сливочное с брусничным джемом</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
             <li class="ice-cream-card">
               <img class="ice-cream-img" src="img/blackberry.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
@@ -306,7 +306,7 @@
               <p class="description">
                 <a href="#">Сливочно-черничное с цельными ягодами черники</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
             <li class="ice-cream-card">
               <img class="ice-cream-img" src="img/lemon.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
@@ -317,7 +317,7 @@
               <p class="description">
                 <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
             <li class="ice-cream-card">
               <img class="ice-cream-img" src="img/cream-chok.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
@@ -328,7 +328,7 @@
               <p class="description">
                 <a href="#">Сливочное с шоколадной стружкой</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
 
             <li class="ice-cream-card">
@@ -340,7 +340,7 @@
               <p class="description">
                 <a href="#">Сливочно-ванильное с кусочками шоколада</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
             <li class="ice-cream-card">
               <img class="ice-cream-img" src="img/mint.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
@@ -351,7 +351,7 @@
               <p class="description">
                 <a href="#">Сливочное с ментоловым сиропом</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
             <li class="ice-cream-card">
               <img class="ice-cream-img" src="img/cream-chok-pieces.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
@@ -362,7 +362,7 @@
               <p class="description">
                 <a href="#">Сливочное с кусочками черного шоколада</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
             <li class="ice-cream-card">
               <img class="ice-cream-img" src="img/mint-green.jpg" width="267" height="267" alt="Сливочное с мятным сиропом мороженное">
@@ -373,7 +373,7 @@
               <p class="description">
                 <a href="#">Сливочное с мятным сиропом</a>
               </p>
-              <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
+              <a href="#" class="button fast-view" name="fast-view"> Быстрый просмотр</a>
             </li>
           </ul>
           <ul class="pagination-list">
