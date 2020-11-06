@@ -531,7 +531,7 @@ justify-content: space-between;
   margin: 0;
   padding: 0;
   padding: 10px 15px;
-  width: 510px;
+  width: 520px;
   border-radius: 5px;
   list-style: none;
   font-size: 13px;
@@ -553,12 +553,13 @@ justify-content: space-between;
 .сart-table{
   margin: 0;
   padding: 0;
-  width: 520px;
+  width: 510px;
   min-height: 107px;
   list-style: none;
 }
 
 .cart-item{
+  list-style-type: none;
   position: relative;
   min-height: 51px;
   font-size: 13px;
@@ -580,7 +581,6 @@ justify-content: space-between;
 }
 
 .last-cart-item{
-  padding-bottom: 17px;
   border-bottom: 1px solid #cacac7;
 }
 
@@ -590,9 +590,6 @@ justify-content: space-between;
 }
 
 .delete-cart-item{
-  position: absolute;
-  display: flex;
-  align-items: center;
   width: 9px;
   height: 9px;
   font-size: 0;
@@ -605,7 +602,7 @@ justify-content: space-between;
 .delete-cart-item::after{
   content: "";
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
   width: 14px;
   height: 1px;
@@ -615,13 +612,13 @@ justify-content: space-between;
 .delete-cart-item::before{
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+          transform: translateY(-50) rotate(45deg);
 }
 
 .delete-cart-item::after{
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+          transform: translateY(-50) +rotate(-45deg);
 }
 
 .cart-item-img{
@@ -1423,7 +1420,7 @@ a.bold-href{
 
 .breadcrumbs{
   margin: 0;
-  margin-top: 18px;
+  margin-top: 2px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
